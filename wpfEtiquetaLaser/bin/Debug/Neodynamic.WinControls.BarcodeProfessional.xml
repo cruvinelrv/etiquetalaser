@@ -1,0 +1,1353 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Neodynamic.WinControls.BarcodeProfessional</name>
+    </assembly>
+    <members>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Alignment">
+            <summary>
+            Specifies the text alignment on the barcode image
+            </summary>	
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding">
+            <summary>
+            Specifies the DataMatrix Encoding to use on that symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding.Auto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding.Ascii">
+            <summary>
+            Used to encode data that mainly contains ASCII characters (0-127)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding.C40">
+            <summary>
+            Used to encode data that mainly contains numeric and upper case characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding.Text">
+            <summary>
+            Used to encode data that mainly contains numeric and lower case characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.DataMatrixEncoding.Base256">
+            <summary>
+            Used to encode 8 bit values
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.DataMatrixFormat">
+            <summary>
+            Specifies the DataMatrix Format to use on that symbology.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.BearerBarStyle">
+            <summary>
+            Specifies the bearer bars' type that must be drawn with the barcode image. Bearer bar is only available for 2 of 5, Code 128 and UCC.EAN 128 barcodes.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.BearerBarStyle.None">
+            <summary>
+            No bearer bars are drawn on the barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.BearerBarStyle.Frame">
+            <summary>
+            The bearer bars are drawn surrounding the symbol
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.BearerBarStyle.HorizontalRules">
+            <summary>
+            The bearer bars are drawn at the top and bottom on the symbol
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Pdf417CompactionType">
+            <summary>
+            Specifies the Compaction Type to apply for PDF417 symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Pdf417CompactionType.Auto">
+            <summary>
+            It switches between Text, Binary and Numeric modes in order to minimize the number of codewords to be encoded.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Pdf417CompactionType.Binary">
+            <summary>
+            It allows encoding all 256 possible 8-bit byte values. This includes all ASCII characters value from 0 to 127 inclusive and provides for international character set support. 
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Pdf417CompactionType.Text">
+            <summary>
+            It allows encoding all printable ASCII characters, i.e. values from 32 to 126 inclusive in accordance with ISO/IEC 646, as well as selected control characters such as TAB (horizontal tab ASCII 9), LF (NL line feed, new line ASCII 10) and CR (carriage return ASCII 13). 
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Pdf417CompactionType.Numeric">
+            <summary>
+            It allows encoding numeric data strings.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Pdf417ErrorCorrection">
+            <summary>
+            Specifies the Error Correction Level to apply for PDF417 symbology.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.MicroPdf417Version">
+            <summary>
+            Specifies the MicroPDF417 version (a predefined combinations of numbers of columns and rows) to be generated. 
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.CodabarStartStopChar">
+            <summary>
+            Specifies the start and stop character for Codabar symbology.
+            </summary>	
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Code16k">
+            <summary>
+            Specifies the mode to use for Code16k symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code16k.Mode0">
+            <summary>
+            Barcode Professional will use the Code 128 Char Set A which only supports ASCII values from 0 to 95
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code16k.Mode1">
+            <summary>
+            Barcode Professional will use the Code 128 Char Set B which only supports ASCII values from 32 to 127
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code16k.Mode2">
+            <summary>
+            Barcode Professional will use the Code 128 Char Set C which only supports pairs of digits
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.FIM">
+            <summary>
+            Specifies the facing identification mark (FIM) pattern to use on that symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.FIM.A">
+            <summary>
+            Used for Courtesy Reply Mail (CRM) and Meter Reply Mail (MRM) with a preprinted barcode.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.FIM.B">
+            <summary>
+            Used for Business Reply Mail (BRM) without a preprinted BRM ZIP+4 barcode.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.FIM.C">
+            <summary>
+            Used for Business Reply Mail (BRM) with a preprinted BRM ZIP+4 barcode.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.FIM.D">
+            <summary>
+            Used only with information based indicia (IBI) postage.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure">
+            <summary>
+            Specifies the ISBT 128 Data Structures.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS001">
+            <summary>
+            Donation Identification Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS002">
+            <summary>
+            Blood Groups (ABO and RhD)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS003">
+            <summary>
+            Product Code
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS004">
+            <summary>
+            Expiration Date
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS005">
+            <summary>
+            Expiration Date and Time
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS006">
+            <summary>
+            Collection Date
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS007">
+            <summary>
+            Collection Date and Time
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS008">
+            <summary>
+            Production Date
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS009">
+            <summary>
+            Production Date and Time
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS010">
+            <summary>
+            Special Testing: General
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS011">
+            <summary>
+            Special Testing: Red Blood Cell Antigens (withdrawn)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS012">
+            <summary>
+            Special Testing: Red Blood Cell Antigens - General
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS013">
+            <summary>
+            Special Testing: Red Blood Cell Antigens - Finnish
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS014">
+            <summary>
+            Special Testing: Platelet HLA and Platelet-Specific Antigens
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS015">
+            <summary>
+            Special Testing: HLA-A and -B Alleles
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS016">
+            <summary>
+            Special Testing: HLA-DRB1 Alleles
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS017">
+            <summary>
+            Container Manufacturer and Catalog Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS018">
+            <summary>
+            Container Lot Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS019">
+            <summary>
+            Donor Identification Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS020">
+            <summary>
+            Staff Member Identification Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS021">
+            <summary>
+            Manufacturer and Catalog Number: Items Other Than Containers
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS022">
+            <summary>
+            Lot Number: Items Other Than Containers
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS023">
+            <summary>
+            Compound Message
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS024">
+            <summary>
+            Patient Date of Birth
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS025">
+            <summary>
+            Patient Hospital Identification Number
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Isbt128DataStructure.DS026">
+            <summary>
+            Expiration Month and Year
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Supplement">
+            <summary>
+            Specifies the supplement type to use with EAN and UPC symbologies.
+            </summary>	
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding">
+            <summary>
+            Specifies the QR Code Encoding to use on that symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding.Auto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding.Numeric">
+            <summary>
+            Used to encode data that mainly contains numeric characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding.AlphaNumeric">
+            <summary>
+            Used to encode data that mainly contains alphanumeric characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding.Kanji">
+            <summary>
+            Used to encode data that mainly contains Kanji characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeEncoding.Byte">
+            <summary>
+            Used to encode 8 bit values
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.QRCodeVersion">
+            <summary>
+            Specifies the QR Code Version to use on that symbology. Version 1 (21 x 21 modules) to Version 40 (177 x 177 modules) increasing in steps of four modules per side. 
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.QRCodeErrorCorrectionLevel">
+            <summary>
+            Specifies the Error Correction Level to apply for QR Code symbology.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeErrorCorrectionLevel.L">
+            <summary>
+            Approx. 7% of codewords can be restored. Error correction level L is appropriate for high symbol quality and/or the need for the smallest possible symbol.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeErrorCorrectionLevel.M">
+            <summary>
+            Approx. 15% of codewords can be restored. Level M is described as Standard level and offers a good compromise between small size and increased reliability. 
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeErrorCorrectionLevel.Q">
+            <summary>
+            Approx. 25% of codewords can be restored. Level Q is a High reliability level and suitable for more critical or poor print quality applications.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.QRCodeErrorCorrectionLevel.H">
+            <summary>
+            Approx. 30% of codewords can be restored. Level H offers the maximum achievable reliability.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Code128">
+            <summary>
+            Specifies the characters set to use in the Code 128 symbology.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code128.Auto">
+            <summary>
+            Barcode Professional will automatically switch between code sets to encode the ASCII values.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code128.A">
+            <summary>
+            Barcode Professional will use the Char Set A which only supports ASCII values from 0 to 95
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code128.B">
+            <summary>
+            Barcode Professional will use the Char Set B which only supports ASCII values from 32 to 127
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Code128.C">
+            <summary>
+            Barcode Professional will use the Char Set C which only supports pairs of digits
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional">
+            <summary>
+            Neodynamic Barcode Professional allows you to quickly and easily add barcodes into your Windows Forms applications.
+            </summary>		
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetCrystalReportsDataSet">
+            <summary>
+            This method can be called when a barcode image want to be shown in a Crystal Reports report. For more information about it visit Neodynamic's website at http://www.neodynamic.com
+            </summary>
+            <returns>
+            A DataSet object which contains the barcode image in PNG (Portable Network Graphics) format.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetCrystalReportsDataSet(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            This method can be called when a barcode image want to be shown in a Crystal Reports report. For more information about it visit Neodynamic's website at http://www.neodynamic.com
+            </summary>
+            <param name="imageFormat">
+            The ImageFormat object to use for the barcode image.
+            </param>
+            <returns>
+            A DataSet object which contains the barcode image in the image format specified.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Save(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Saves this barcode image to the specified file in the specified format.
+            </summary>
+            <param name="filename">
+            A string that contains the name of the file to which to save this barcode image.
+            </param>
+            <param name="format">
+            The ImageFormat object for this barcode image.
+            </param>		
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Save(System.String,System.Drawing.Imaging.ImageFormat,System.Single,System.Single)">
+            <summary>
+            Saves this barcode image to the specified file in the specified format and resolution.
+            </summary>
+            <param name="filename">
+            A string that contains the name of the file to which to save this barcode image.
+            </param>
+            <param name="format">
+            The ImageFormat object for this barcode image.
+            </param>
+            <param name="xDpi">
+            The horizontal resolution, in dots per inch, of the barcode image. 
+            </param>
+            <param name="yDpi">
+            The vertical resolution, in dots per inch, of the barcode image.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Save(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Saves this barcode image to the specified Stream object in the specified format.
+            </summary>
+            <param name="stream">
+            The Stream object to which to save this barcode image. 
+            </param>
+            <param name="format">
+            The ImageFormat object for this barcode image.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Save(System.IO.Stream,System.Drawing.Imaging.ImageFormat,System.Single,System.Single)">
+            <summary>
+            Saves this barcode image to the specified Stream object in the specified format and resolution.
+            </summary>
+            <param name="stream">
+            The Stream object to which to save this barcode image. 
+            </param>
+            <param name="format">
+            The ImageFormat object for this barcode image.
+            </param>
+            <param name="xDpi">
+            The horizontal resolution, in dots per inch, of the barcode image. 
+            </param>
+            <param name="yDpi">
+            The vertical resolution, in dots per inch, of the barcode image.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage">
+            <summary>
+            Gets a System.Drawing.Image object of the barcode image.
+            </summary>
+            <returns>
+            A System.Drawing.Image object that represent the barcode image.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Single,System.Drawing.SizeF)">
+            <summary>
+            Gets a System.Drawing.Image object of the barcode image fitting the bars into the specified size measured in inches.
+            </summary>
+            <param name="dpi">
+            The resolution, in dots per inch, of the output image.
+            </param>
+            <param name="barsAreaSizeInInches">
+            The desired bars area size, in inches, for the barcode image.
+            </param>
+            <returns>
+            A System.Drawing.Image object that represent the barcode image.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Single,System.Drawing.SizeF,System.Boolean)">
+            <summary>
+            Gets a System.Drawing.Image object of the barcode image fitting the bars into the specified size measured in inches. It also performs the scaling of the Font in order to accommodate it to the desired size.
+            </summary>
+            <param name="dpi">
+            The resolution, in dots per inch, of the output image.
+            </param>
+            <param name="barsAreaSizeInInches">
+            The desired bars area size, in inches, for the barcode image.
+            </param>
+            <param name="autoScaleFont">
+            Specifies whether the Font size must be scaled.
+            </param>
+            <returns>
+            A System.Drawing.Image object that represent the barcode image.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Single)">
+            <summary>
+            Gets a System.Drawing.Image object of the barcode image at the specified resolution.
+            </summary>
+            <param name="dpi">
+            The resolution, in dots per inch, of the output image.
+            </param>
+            <returns>
+            A System.Drawing.Image object that represent the barcode image at the specified resolution.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Gets a byte array that represents the barcode image.
+            </summary>
+            <param name="imageFormat">
+            The ImageFormat object for the barcode image.
+            </param>
+            <returns>
+            A byte array representation of the barcode image.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Drawing.Imaging.ImageFormat,System.Single,System.Drawing.SizeF)">
+            <summary>
+            Gets a byte array that represents the barcode image fitting the bars into the specified size measured in inches.
+            </summary>
+            <param name="imageFormat">
+            The ImageFormat object for the barcode image.
+            </param>
+            <param name="dpi">
+            The resolution, in dots per inch, of the output image.
+            </param>
+            <param name="barsAreaSizeInInches">
+            The desired bars area size, in inches, for the barcode image.
+            </param>
+            <returns>
+            A byte array representation of the barcode image.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GetBarcodeImage(System.Drawing.Imaging.ImageFormat,System.Single)">
+            <summary>
+            Gets a byte array that represents the barcode image at the specified resolution.
+            </summary>
+            <param name="imageFormat">
+            The ImageFormat object for the barcode image.
+            </param>
+            <param name="dpi">
+            The resolution, in dots per inch, of the output image.
+            </param>
+            <returns>
+            A byte array representation of the barcode image at the specified resolution.
+            </returns>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DrawOnCanvas(System.Drawing.Graphics)">
+            <summary>
+            Draws the barcode image onto the graphics object at the origin point.
+            </summary>
+            <param name="graphic">
+            The Graphics object to draw with.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DrawOnCanvas(System.Drawing.Graphics,System.Drawing.PointF)">
+            <summary>
+            Draws the barcode image onto the graphics object at the given point.
+            </summary>
+            <param name="graphic">
+            The Graphics object to draw with.
+            </param>
+            <param name="pt">
+            The point on the graphic object to begin drawing the barcode image.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DrawOnCanvas(System.Drawing.Graphics,System.Drawing.PointF,System.Single)">
+            <summary>
+            Draws the barcode image onto the graphics object at the given point and in the specified scale.
+            </summary>
+            <param name="graphic">
+            The Graphics object to draw with.
+            </param>
+            <param name="pt">
+            The point on the graphic object to begin drawing the barcode image.
+            </param>
+            <param name="scale">
+            The value to scale the barcode image.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DrawOnCanvas(System.Drawing.Graphics,System.Drawing.RectangleF)">
+            <summary>
+            Draws the barcode image onto the graphics object with the bars filling the specified area measured in inches.
+            </summary>
+            <param name="graphic">
+            The Graphics object to draw with.
+            </param>
+            <param name="barsAreaInInches">
+            The area on the graphic object to begin drawing the barcode bars.
+            </param>
+        </member>
+        <member name="M:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DrawOnCanvas(System.Drawing.Graphics,System.Drawing.RectangleF,System.Boolean)">
+            <summary>
+            Draws the barcode image onto the graphics object with the bars filling the specified area measured in inches. It also performs the scaling of the Font in order to accommodate it to the desired size.
+            </summary>
+            <param name="graphic">
+            The Graphics object to draw with.
+            </param>
+            <param name="barsAreaInInches">
+            The area on the graphic object to begin drawing the barcode bars.
+            </param>
+            <param name="autoScaleFont">
+            Specifies whether the Font size must be scaled.
+            </param>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AutoSize">
+            <summary>
+            Gets or sets whether the barcode image is automatically resized to display its entire contents.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Text">
+            <summary>
+            Gets or sets the additional text to show in the barcode image e.g.: Client ID. Note: This is not the value to encode.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Image">
+            <summary>
+            Gets a System.Drawing.Image object of the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AntiAlias">
+            <summary>
+            Gets or sets whether AntiAlias effect must be applied to all the texts in the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BarColor">
+            <summary>
+            Gets or sets the bars' color of the barcode.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BorderColor">
+            <summary>
+            Gets or sets the barcode control border's color.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BorderWidth">
+            <summary>
+            Gets or sets the barcode image border's width.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BarHeight">
+            <summary>
+            Gets or sets the bars' height of the barcode. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BarWidth">
+            <summary>
+            Gets or sets the narrow bars' width of the barcode. In barcode terminology this is X value. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BarRatio">
+            <summary>
+            Gets or sets the wide bars' width compared to the narrow bars' width. In barcode terminology this is N value.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Rotate">
+            <summary>
+            Gets or sets the rotation angle to apply on the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.CodabarStartChar">
+            <summary>
+            Gets or sets the start character for Codabar symbology. Possible values are: A, B, C or D.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.CodabarStopChar">
+            <summary>
+            Gets or sets the stop character for Codabar symbology. Possible values are: A, B, C or D.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DisplayStartStopChar">
+            <summary>
+            Gets or sets whether start and stop characters must be displayed in the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Code">
+            <summary>
+            Gets or sets the value to encode.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AddChecksum">
+            <summary>
+            Gets or sets whether checksum must be generated and attached to the value to encode.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GuardBar">
+            <summary>
+            Gets or sets whether guard bars must be drawn.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.GuardBarHeight">
+            <summary>
+            Gets or sets the guard bars' height. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Code128CharSet">
+            <summary>
+            Gets or sets the characters set to use in the Code 128 symbology. Possible values are: Auto, A, B or C.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PlanetHeightTallBar">
+            <summary>
+            Gets or sets the tall bars' height of Planet symbology. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PlanetHeightShortBar">
+            <summary>
+            Gets or sets the short bars' height of Planet symbology. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PostnetHeightTallBar">
+            <summary>
+            Gets or sets the tall bars' height of Postnet symbology. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PostnetHeightShortBar">
+            <summary>
+            Gets or sets the short bars' height of Postnet symbology. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Symbology">
+            <summary>
+            Gets or sets the barcode symbology to generate.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.QuietZoneWidth">
+            <summary>
+            Gets or sets the quiet zone's width. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DisplayChecksum">
+            <summary>
+            Gets or sets whether checksum value must be displayed after the value to encode in the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DisplayCode">
+            <summary>
+            Gets or sets whether the value to encode must be displayed in the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.TextAlignment">
+            <summary>
+            Gets or sets the text alignment for Text property.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.CodeAlignment">
+            <summary>
+            Gets or sets the text alignment for Code property.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.TopMargin">
+            <summary>
+            Gets or sets the height of the margin above the barcode bars. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BottomMargin">
+            <summary>
+            Gets or sets the height of the margin below the barcode bars. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Code16kMode">
+            <summary>
+            Gets or sets the mode to use for Code16k symbology. Modes supported are: Mode 0, 1, and 2.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Extended">
+            <summary>
+            Gets or sets whether the extended versions for Code 39 and/or Code 93 symbologies must be used.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DataMatrixModuleSize">
+            <summary>
+            Gets or sets the module size. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DataMatrixProcessTilde">
+            <summary>
+            Gets or sets whether tilde character should be processed when DataMatrix code is being generated.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DataMatrixFormat">
+            <summary>
+            Gets or sets the DataMatrix Format to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DataMatrixEncoding">
+            <summary>
+            Gets or sets the DataMatrix Encoding to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.EanUpcSupplement">
+            <summary>
+            Gets or sets the supplement type to use with EAN and UPC symbologies.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.EanUpcSupplementTopMargin">
+            <summary>
+            Gets or sets the height of the margin above the EAN/UPC supplement bars. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.EanUpcSupplementSeparation">
+            <summary>
+            Gets or sets the gap separation between the barcode and its supplement. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.EanUpcSupplementCode">
+            <summary>
+            Gets or sets the supplement value for EAN and UPC symbologies.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.UpcESystem">
+            <summary>
+            Gets or sets the number system to use for UPC-E symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417Rows">
+            <summary>
+            Gets or sets the number of rows to use for PDF417 symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417Columns">
+            <summary>
+            Gets or sets the number of columns to use for PDF417 symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417ErrorCorrectionLevel">
+            <summary>
+            Gets or sets the Error Correction Level to apply for PDF417 symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417CompactionType">
+            <summary>
+            Gets or sets the Compaction Type to apply for PDF417 symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417Truncated">
+            <summary>
+            Gets or sets whether the right side of PDF417 barcode is truncated (removed).
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.IsbnSupplementCode">
+            <summary>
+            (Obsolete) Do not use IsbnSupplementCode property. Use EanUpcSupplementCode property instead.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BorderStyle">
+            <summary>
+            Gets or sets the barcode control's border style.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Postal4StateTrackerBarHeight">
+            <summary>
+            Gets or sets the tracker bar's height. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Postal4StateTrackerBarWidth">
+            <summary>
+            Gets or sets the tracker bar's width. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Postal4StateBarsSpacing">
+            <summary>
+            Gets or sets the gap spacing between bars. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Postal4StateAddStartStopChar">
+            <summary>
+            Gets or sets whether start and stop characters must be added and drawn in the barcode image.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BearerBarStyle">
+            <summary>
+            Gets or set the bearer bars' type that must be drawn with the barcode image. Bearer bar is only available for 2 of 5, Code 128 and UCC.EAN 128 barcodes.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.BearerBarWidth">
+            <summary>
+            Gets or sets the bearer bars' width. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.DisplayLightMarginIndicator">
+            <summary>
+            Gets or sets whether light margin indicators must be displayed in the barcode image. Only available for EAN/UPC Symbologies.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.IsCodeValid">
+            <summary>
+            Gets a value indicating whether the value to encode specified in the Code property is valid based on the Barcode Symbology specified in the Symbology property.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Monochrome">
+            <summary>
+            Gets or sets a value indicating whether the barcode image must be converted to monochrome a.k.a. Black and White 1 bit per pixel format.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.QRCodeModuleSize">
+            <summary>
+            Gets or sets the module size. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.QRCodeEncoding">
+            <summary>
+            Gets or sets the QR Code Encoding to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.QRCodeErrorCorrectionLevel">
+            <summary>
+            Gets or sets the Error Correction Level to apply for QR Code symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.QRCodeVersion">
+            <summary>
+            Gets or sets the QR Code Version to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.UspsFimPattern">
+            <summary>
+            Gets or sets the USPS FIM pattern to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.UspsHorizontalBarsCount">
+            <summary>
+            Gets or sets the number of horizontal bars to be drawn.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.TelepenEncoding">
+            <summary>
+            Gets or sets the Telepen Encoding to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PharmacodeThinBarWidth">
+            <summary>
+            Gets or sets the width of Pharmacode Thin Bars.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PharmacodeThickBarWidth">
+            <summary>
+            Gets or sets the width of Pharmacode Thick Bars.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.PharmacodeBarsSpacing">
+            <summary>
+            Gets or sets the gap between Pharmacode bars.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AztecCodeModuleSize">
+            <summary>
+            Gets or sets the module size. It's measured in inches.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AztecCodeFormat">
+            <summary>
+            Gets or sets the Aztec Code Format to use on that symbology.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AztecCodeErrorCorrection">
+            <summary>
+            Gets or sets the Error Correction Percentage to apply for Aztec Code symbology. Default is 23.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.AztecCodeRune">
+            <summary>
+            Gets or sets the Aztec Code Rune value. It must be a value from 0 to 255 and is available for Aztec Code Compact Format only.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417SegmentIndex">
+            <summary>
+            Gets or sets the Segment Index for a Macro PDF417 symbol. Its value must be 0 (zero) up to 99998 and must be less than the value in Pdf417SegmentCount property.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417SegmentCount">
+            <summary>
+            Gets or sets the number of Macro PDF417 symbols. Its value must be less than or equal to 99999.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417FileId">
+            <summary>
+            Gets or sets the File ID of the Macro PDF417 symbol. Its value must be a sequence of codewords (Each codeword value must be a number between 000 and 899) and must be the same for all data segments.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Pdf417AspectRatio">
+            <summary>
+            Gets or sets the ratio of the height to the overall width of the PDF417 symbol. Its value must be 0 (zero) up to 1 (one).
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.MicroPdf417Version">
+            <summary>
+            Gets or sets the MicroPDF417 version (a predefined combinations of numbers of columns and rows) to be generated.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.Isbt128DataStructure">
+            <summary>
+            Gets or sets the ISBT 128 Data Structure to be generated.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.HibcFormatHumanReadableText">
+            <summary>
+            Gets or sets whether the Human Readable Text is formatted as specified by HIBC Standards i.e. Zeros are displayed as Slashed-Zeros and the Space character is displayed as an Underscore.
+            </summary>
+        </member>
+        <member name="P:Neodynamic.WinControls.BarcodeProfessional.BarcodeProfessional.UseQuietZoneForText">
+            <summary>
+            Gets or sets whether quiet zones are used for drawing Text and/or Code properties.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Symbology">
+            <summary>
+            Specifies the Barcode Symbology to be used.
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Codabar">
+            <summary>
+            Codabar a.k.a. ABC Codabar, CodaBar, USD-4, NW-7, Code 2 of 7, Monarch, Code-27, Ames code, Rationalized Codabar, 2 of 7 Code, ANSI/AIM Codabar, Uniform Symbology Specification Codabar, USS Codabar
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code11">
+            <summary>
+            Code 11 a.k.a. Code11, USD-8, USD8
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code16k">
+            <summary>
+            Code 16K
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code39">
+            <summary>
+            Code 39 a.k.a. ANSI/AIM Code 39, ANSI/AIM Code 39, Uniform Symbology Specification Code 39, USS Code 39, USS 39, Code 3/9, Code 3 of 9, USD-3, LOGMARS, Alpha39, Code 39 Extended, and Code 39 Full ASCII
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code93">
+            <summary>
+            Code 93 a.k.a. ANSI/AIM Code 93, ANSI/AIM Code 93, Uniform Symbology Specification Code 93, USS Code 93, USS 93, Code 9/3, USS-93, USD-3, Code 93 Extended, and Code 93 Full ASCII
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code128">
+            <summary>
+            Code 128 a.k.a. ANSI/AIM 128, ANSI/AIM Code 128, USS Code 128, Uniform Symbology Specification Code 128, Code 128 Code Set A, Code 128 Code Set B, Code 128 Code Set C, Code 128A, Code 128B, Code 128C
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.DataMatrix">
+            <summary>
+            Data Matrix a.k.a. Data Matrix ECC200
+            </summary>	
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Ean8">
+            <summary>
+            EAN-8 a.k.a. European Article Number 8, EAN-8 Supplement 5/Five-digit Add-On, EAN-8 Supplement 2/Two-digit Add-On, EAN-8+5, EAN-8+2, EAN8, EAN8+5, EAN13+2, UPC-8, GTIN-8, GS1-8
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Ean13">
+            <summary>
+            EAN-13 a.k.a. European Article Number 13, EAN-13 Supplement 5/Five-digit Add-On, EAN-13 Supplement 2/Two-digit Add-On, EAN-13+5, EAN-13+2, EAN13, EAN13+5, EAN13+2, UPC-13, GTIN-13, GS1-13
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Industrial2of5">
+            <summary>
+            Industrial 2 of 5 a.k.a. 2 of 5 Industrial, 2/5 Industrial, 2 of 5 Standard, Standard 2 of 5, 2/5 Standard, Code 2/5, 2 of 5, C 2 of 5
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Interleaved2of5">
+            <summary>
+            Interleaved 2 of 5 a.k.a. ANSI/AIM ITF 25, ANSI/AIM I-2/5, Uniform Symbology Specification ITF, USS ITF 2/5, ITF, I-2/5, 2 of 5 Interleaved, 2/5 Interleaved
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Isbn">
+            <summary>
+            ISBN a.k.a. International Standard Book Number, Bookland EAN, ISBN-13, ISBN-10, ISBN+5, ISBN+2, ISBN Supplement 5/Five-digit Add-On, ISBN Supplement 2/Two-digit Add-On
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Msi">
+            <summary>
+            MSI a.k.a. MSI/Plessey, Modified Plessey
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Pdf417">
+            <summary>
+            PDF417 a.k.a. Portable Data File 417, PDF 417, PDF417 Truncated
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Planet">
+            <summary>
+            PLANET a.k.a. USPS PLANET Barcode, USPS Confirm Service Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Postnet">
+            <summary>
+            POSTNET a.k.a. USPS POSTNET Barcode, USPS POSTal Numeric Encoding Technique Barcode, Delivery Point Barcode (DPBC), Postnet 3 of 5
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UccEan128">
+            <summary>
+            UCC/EAN-128 a.k.a. EAN-128, UCC-128, USS-128, GS1-128, UCC.EAN-128, GTIN-128
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UpcA">
+            <summary>
+            UPC-A a.k.a. Universal Product Code version A, UPC-A Supplement 5/Five-digit Add-On, UPC-A Supplement 2/Two-digit Add-On, UPC-A+5, UPC-A+2, UPC Code, UPC Symbol, GTIN-12, GS1-12
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UpcE">
+            <summary>
+            UPC-E a.k.a. Universal Product Code version E, UPC-E Supplement 5/Five-digit Add-On, UPC-E Supplement 2/Two-digit Add-On, UPC-E+5, UPC-E+2, UPC-E0, E0, UPC-E1, E1, GTIN-12 with lead 0, GS1-12
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsOneCode4CB">
+            <summary>
+            USPS OneCode 4-State Customer Barcode a.k.a. OneCode 4CB, USPS 4CB, 4-CB, 4-State Customer Barcode, USPS OneCode Solution Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.RoyalMail">
+            <summary>
+            British Royal Mail 4-State Customer Barcode a.k.a. RM4SCC, RoyalMail4SCC, British Royal Mail 4-State Customer Code and Royal Mail Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.AustraliaPost">
+            <summary>
+            Australia Post 4-state Barcode a.k.a. Australian 4-state postal barcode, Australia Post Customer Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.RoyalTpgPostKix">
+            <summary>
+            Royal TPG Post KIX 4-State Barcode a.k.a. Kix Barcode, Klantenindex (client index) Barcode, Dutch KIX 4-State Bar Code, Dutch KIX, TPG KIX, and TPGPOST KIX
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Sscc18">
+            <summary>
+            SSCC-18 a.k.a. UPC-128 Shipping Container Code, Code 128 UPC Shipping Container Code, Serial Shipping Container Code, UCC-128, EAN-18, NVE (Nummer der Versandeinheit)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Pzn">
+            <summary>
+            PZN a.k.a. Pharma-Zentral-Nummer, Pharmazentralnummer, Code PZN, CodePZN
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.DeutschePostLeitcode">
+            <summary>
+            Deutsche Post Leitcode Barcode a.k.a. German Postal 2 of 5 Leitcode, CodeLeitcode, Leitcode, Deutsche Post AG (DHL)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.DeutschePostIdentcode">
+            <summary>
+            Deutsche Post Identcode Barcode a.k.a. German Postal 2 of 5 Identcode, Deutsche Post AG Identcode, Deutsche Frachtpost Identcode, Identcode, CodeIdentcode, Deutsche Post AG (DHL)
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsTrayLabel">
+            <summary>
+            USPS Tray Label Barcode a.k.a. USPS 25 Tray label
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsSackLabel">
+            <summary>
+            USPS Sack Label Barcode a.k.a. USPS 25 Sack label
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.EanVelocity">
+            <summary>
+            EAN-Velocity a.k.a. Velocity Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.SingaporePost">
+            <summary>
+            Singapore 4-State Postal Code Barcode a.k.a. Singapore 4-State Postal, SingPost 4-State, and SingPost Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Jan8">
+            <summary>
+            JAN-8 a.k.a. Japanese Article Number 8, JAN-8 Supplement 5/Five-digit Add-On, JAN-8 Supplement 2/Two-digit Add-On, JAN-8+5, JAN-8+2, JAN8, JAN8+5, JAN8+2
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Jan13">
+            <summary>
+            JAN-13 a.k.a. Japanese Article Number 13, JAN-13 Supplement 5/Five-digit Add-On, JAN-13 Supplement 2/Two-digit Add-On, JAN-13+5, JAN-13+2, JAN13, JAN13+5, JAN13+2
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.SwissPostParcel">
+            <summary>
+            Swiss PostParcel Barcode a.k.a. SwissPost Parcel Barcode, Switzerland Post Parcel Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Opc">
+            <summary>
+            OPC a.k.a. Optical Product Code, VCA Barcode, VCA OPC, Vision Council of America OPC Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Ean99">
+            <summary>
+            EAN-99 a.k.a. European Article Number 99, EAN-99 Supplement 5/Five-digit Add-On, EAN-99 Supplement 2/Two-digit Add-On, EAN-99+5, EAN-99+2, EAN99, EAN99+5, EAN99+2, GTIN-99, GS1-99, Coupon Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Itf14">
+            <summary>
+            ITF-14 a.k.a. UPC Shipping Container Symbol ITF-14, ITF14, Case Code, UPC Case Code, EAN/UCC-14, EAN-14, UCC-14, DUN-14, GTIN-14
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Scc14">
+            <summary>
+            SCC-14 a.k.a. Shipping Container Code, EAN/UCC 14, DUN-14, EAN-14, UCC-14, UPC Case Code, UPC Shipping Container Code, Distribution Unit Number 14, SCC14, DUN14, EAN14, UCC14, EAN/UCC-14, Despatch Unit Number 14, GTIN-14
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Issn">
+            <summary>
+            ISSN a.k.a. International Standard Serial Number, ISSN-13, ISSN-10, ISSN+5, ISSN+2, ISSN Supplement 5/Five-digit Add-On, ISSN Supplement 2/Two-digit Add-On
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Ismn">
+            <summary>
+            ISMN a.k.a. International Standard Music Number, ISMN-13, ISMN-10, ISMN+5, ISMN+2, ISMN Supplement 5/Five-digit Add-On, ISMN Supplement 2/Two-digit Add-On, ISO 10957
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.NumlyNumber">
+            <summary>
+            Numly Number a.k.a. ESN, Electronic Serial Number, Electronic Standard Book Number, ESBN
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.QRCode">
+            <summary>
+            QR Code a.k.a. Quick Response Code, QRCode Model 2, JIS X 0510,  ISO-IEC 18004
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsFim">
+            <summary>
+            USPS FIM a.k.a. Facing Identification Marks, FIM A B C D
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsHorizontalBars">
+            <summary>
+            USPS Horizontal Bars
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Telepen">
+            <summary>
+            Telepen a.k.a. SB Telepen
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Pharmacode">
+            <summary>
+            Pharmacode a.k.a. Pharmacode Laetus, Pharmaceutical Binary Code
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Semacode">
+            <summary>
+            Semacode a.k.a. URL Barcode, Semacode Tag
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Code32">
+            <summary>
+            Code 32 a.k.a. Italian Pharmacode, IMH, Codice 32 Pharmacode, Codice Farmaceutico Italiano, Radix 32 Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsPicUccEan128">
+            <summary>
+            USPS PIC UCC/EAN-128 a.k.a. USPS Package Identification Code, USPS Confirmation Services Tracking Number Barcode 
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.FedExGround96">
+            <summary>
+            FedEx Ground 96 a.k.a. FedEx 96 Barcode, FedEx Ground 96 UCC/EAN-128, 96 Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.AztecCode">
+            <summary>
+            Aztec Code a.k.a. AIM Aztec Barcode, ANSI/AIM BC13 ITS/97/002
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.CompactPdf417">
+            <summary>
+            Compact PDF417 a.k.a. Compact Portable Data File 417, Compact PDF 417, PDF417 Truncated
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.MacroPdf417">
+            <summary>
+            Macro PDF417 a.k.a. Macro Portable Data File 417, Macro PDF 417, MacroPDF417
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.MicroPdf417">
+            <summary>
+            Micro PDF417 a.k.a. Micro Portable Data File 417, Micro PDF 417, MicroPDF417
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.VicsBol">
+            <summary>
+            VICS BOL a.k.a. VICS Bill of Lading, Voluntary Interindustry Commerce Solutions Bill of Lading, BOL Barcode, 17-digit BOL, VICS standard Bill of Lading
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.VicsScacPro">
+            <summary>
+            VICS SCAC PRO a.k.a. VICS Bill of Lading SCAC PRO, Voluntary Interindustry Commerce Solutions Bill of Lading SCAC PRO, SCAC Barcode, PRO Barcode, VICS SCAC, VICS PRO, SCAC/Pro Barcode, Standard Carrier Alpha Code, Carrier SCAC Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.ItalianPost25">
+            <summary>
+            Italian Post 25 a.k.a. Italian Post ITF 2/5, PosteItaliane Registered Mail Barcode, PosteItaliane ITF
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.Isbt128">
+            <summary>
+            ISBT 128 a.k.a. ISBT Barcode, ISBT128, International Society of Blood Transfusion Barcode, ICCBBA 128, International Council for Commonality in Blood Banking Automation Barcode, Unique Donation Identification Barcode, American Association of Blood Banks AABB 128 Barcode, American Red Cross ARC Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.HibcLic39">
+            <summary>
+            HIBC LIC 39 a.k.a. HIBCC LIC, HIBC Labeler Identification Code, HIBC Supplier Labeling Standard Barcode, HIBC SLS Barcode, HIBC LIC Primary Data Structure, HIBC LIC Secondary Data Structure, HIBC Code 39, HIBC PCN Barcode, HIBC Universal Product Number, HIBC UPN Barcode, Health Industry Bar Code, Health Industry Business Communications Council Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.HibcLic128">
+            <summary>
+            HIBC LIC 128 a.k.a. HIBCC LIC, HIBC Labeler Identification Code, HIBC Supplier Labeling Standard Barcode, HIBC SLS Barcode, HIBC LIC Primary Data Structure, HIBC LIC Secondary Data Structure, HIBC Code 128, HIBC PCN Barcode, HIBC Universal Product Number, HIBC UPN Barcode, Health Industry Bar Code, Health Industry Business Communications Council Barcode
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.HibcPas39">
+            <summary>
+            HIBC PAS 39 a.k.a. HIBCC PAS, HIBC Provider Applications Standard, HIBC Provider Applications Standard Barcode, HIBC PAS Barcode, HIBC PAS Data Structure, HIBC PAS Single Data Structure, HIBC PAS Split Data Field, HIBC PAS Multiple Data Field (Concatenated), HIBC PAS Code 39, HIBC Health Care Services Provider Barcode
+            </summary>        
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.HibcPas128">
+            <summary>
+            HIBC PAS 128 a.k.a. HIBCC PAS, HIBC Provider Applications Standard, HIBC Provider Applications Standard Barcode, HIBC PAS Barcode, HIBC PAS Data Structure, HIBC PAS Single Data Structure, HIBC PAS Split Data Field, HIBC PAS Multiple Data Field (Concatenated), HIBC PAS Code 128, HIBC Health Care Services Provider Barcode
+            </summary>        
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.Symbology.UspsIntelligentMail">
+            <summary>
+            USPS Intelligent Mail Barcode a.k.a. OneCode 4CB, USPS 4CB, 4-CB, 4-State Customer Barcode, USPS OneCode Solution Barcode
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.Rotate">
+            <summary>
+            Specifies the rotation angle to apply on the barcode image. It is measured clockwise from the x-axis.
+            </summary>	
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.TelepenEncoding">
+            <summary>
+            Specifies the Telepen Encoding to use on that symbology.
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.TelepenEncoding.Ascii">
+            <summary>
+            Used to encode the full range of ASCII characters
+            </summary>
+        </member>
+        <member name="F:Neodynamic.WinControls.BarcodeProfessional.TelepenEncoding.Numeric">
+            <summary>
+            Used to encode pairs of numeric characters in double-density mode.
+            </summary>
+        </member>
+        <member name="T:Neodynamic.WinControls.BarcodeProfessional.AztecCodeFormat">
+            <summary>
+            Specifies the Aztec Code Format to use on that symbology.
+            </summary>
+        </member>        
+    </members>
+</doc>

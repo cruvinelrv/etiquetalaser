@@ -1,0 +1,14 @@
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Debug\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Debug\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\Window1.baml
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\Window1.g.cs
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\App.g.cs
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser_MarkupCompile.cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser.g.resources
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser.Properties.Resources.resources
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser.csproj.GenerateResource.Cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Debug\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Debug\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Debug\Neodynamic.WinControls.BarcodeProfessional.xml

@@ -1,0 +1,26 @@
+﻿<Window x:Class="wpfEtiquetaLaser.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MULTISOFT SISTEMAS - ETIQUETA LASER" Height="500" Width="750">
+    <Grid Height="300" Name="grid1" Width="607">
+        <Rectangle HorizontalAlignment="Left" Margin="12,10,0,26" Name="rectangle1" Opacity="0.7" Stroke="Black" Width="182" />
+        <ListBox Margin="23,80,0,65" Name="lstbxPesquisaProduto" HorizontalAlignment="Left" Width="162" KeyDown="lstbxPesquisaProduto_KeyDown" MouseDoubleClick="lstbxPesquisaProduto_MouseDoubleClick" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="23,52,0,0" Name="btnPesquisaProduto" VerticalAlignment="Top" Width="162" Click="btnPesquisaProduto_Click">Pesquisa Produto</Button>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="23,24,0,0" Name="txtPesquisaProduto" VerticalAlignment="Top" Width="162" KeyDown="txtPesquisaProduto_KeyDown" TabIndex="1" />
+        <Rectangle Margin="204,10,221,26" Name="rectangle2" Opacity="0.7" Stroke="Black" />
+        <Button Margin="133,0,0,36" Name="button1" HorizontalAlignment="Left" Width="52" Height="23" VerticalAlignment="Bottom" Click="button1_Click">&gt;&gt;</Button>
+        <ComboBox Height="23" Margin="0,80,231,0" Name="cmbGrade" VerticalAlignment="Top" KeyDown="cmbGrade_KeyDown" HorizontalAlignment="Right" Width="124" />
+        <Label Height="23" Margin="214,24,231,0" Name="lblProduto" VerticalAlignment="Top"></Label>
+        <ComboBox Margin="252,52,231,0" Name="cmbQtd" Height="23" VerticalAlignment="Top" KeyDown="cmbQtd_KeyDown" />
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,108,231,0" Name="btnJogaGrade" VerticalAlignment="Top" Width="52" Click="btnJogaGrade_Click">escolhe</Button>
+        <Rectangle HorizontalAlignment="Right" Margin="0,10,29,26" Name="rectangle3" Opacity="0.7" Stroke="Black" Width="182" />
+        <ListBox HorizontalAlignment="Right" Margin="0,52,39,93" Name="lstbxEtiquetas" Width="162" KeyDown="lstbxEtiquetas_KeyDown" />
+        <Label Height="23" HorizontalAlignment="Right" Margin="0,0,39,36.138" Name="label1" VerticalAlignment="Bottom" Width="162" FontWeight="Bold">PIMACO A4 256</Label>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,39,65" Name="btnImprimir" VerticalAlignment="Bottom" Width="75" Click="btnImprimir_Click">imprime</Button>
+        <Label Height="23" Margin="214,52,0,0" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="71">Qtd.</Label>
+        <Label Height="23" HorizontalAlignment="Left" Margin="214,80,0,0" Name="label3" VerticalAlignment="Top" Width="71">Grd.</Label>
+        <Label Height="23" HorizontalAlignment="Right" Margin="0,24,90,0" Name="label4" VerticalAlignment="Top" Width="111">Etiquetas a imprimir</Label>
+        <Label Height="23" HorizontalAlignment="Right" Margin="0,24,39,0" Name="lblQtdEtiquetas" VerticalAlignment="Top" Width="43" FlowDirection="RightToLeft" FontWeight="Bold">0</Label>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,126,65" Name="btnLimpar" VerticalAlignment="Bottom" Width="75" Click="btnLimpar_Click">limpar</Button>
+    </Grid>
+</Window>

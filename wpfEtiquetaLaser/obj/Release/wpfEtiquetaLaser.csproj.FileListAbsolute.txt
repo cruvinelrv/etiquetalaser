@@ -1,0 +1,28 @@
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\bin\Release\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\bin\Release\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\Window1.baml
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\Window1.g.cs
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\App.g.cs
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser_MarkupCompile.cache
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.g.resources
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.Properties.Resources.resources
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.csproj.GenerateResource.Cache
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Configurações locais\Dados de aplicativos\Temporary Projects\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Release\wpfEtiquetaLaser.exe
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Release\wpfEtiquetaLaser.pdb
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\Window1.baml
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\Window1.g.cs
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\App.g.cs
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser_MarkupCompile.cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.g.resources
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.Properties.Resources.resources
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.csproj.GenerateResource.Cache
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Release\Neodynamic.WinControls.BarcodeProfessional.dll
+C:\Documents and Settings\Thiago\Meus documentos\Visual Studio 2008\Projects\wpfEtiquetaLaser\wpfEtiquetaLaser\bin\Release\Neodynamic.WinControls.BarcodeProfessional.xml
+D:\GERAL\PROJETO wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.exe
+D:\GERAL\PROJETO wpfEtiquetaLaser\wpfEtiquetaLaser\obj\Release\wpfEtiquetaLaser.pdb
